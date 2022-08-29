@@ -261,7 +261,7 @@ class MCP2515
             EFLG_EWARN  = (1<<0)
         };
 
-    private:
+    public:
         static const uint8_t CANCTRL_REQOP = 0xE0;
         static const uint8_t CANCTRL_ABAT = 0x10;
         static const uint8_t CANCTRL_OSM = 0x08;
@@ -445,7 +445,7 @@ class MCP2515
         uint8_t SPICS;
         uint32_t SPI_CLOCK;
 
-    private:
+    public:
 
         void startSPI();
         void endSPI();
